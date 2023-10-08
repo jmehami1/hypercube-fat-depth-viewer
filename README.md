@@ -1,12 +1,24 @@
-# hypercube-fat-depth-viewer
+# Hypercube Fat Depth Viewer
 
-1. Run `testing_reflectance_viewer.m` to see example of expected reflectance line plot with STD area from threshold-ed upper and lower fat depth values
+Shows the spectral mean and STD with varying fat depth (a scalar value) from a hypercube and corresponding fat depth image.
+
+Set the minimum and maximum fat depth values to display in the graph using the sliders.
+
+**Requirements**
+
+MATLAB (working in R2022B)
+
+<p align="center">
+    <img src="docs/viewer_screenshot.png" alt="Screenshot of MATLAB viewer" width="70%"/>
+</p>
+
+## Startup
+
+Run the script `StartupApp.m` in MATLAB. This will load the test dataset from the MAT file called "reflectance_hypercube_lamb_cut.mat".
 
 
 
-2. Open the `reflectance_fatdepth_viewer.mlapp` which gives a basic layout for interactive viewer app to show reflectance line plot with shaded STD.
+## TODO
 
-I've written some code in the `ReflectanceScalarViewer.m` class
-
-
-
+- Generalise so that any scalar value can be input
+- add option for displaying discrete classes for classification problems.
